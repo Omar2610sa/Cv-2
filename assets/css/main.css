@@ -1,0 +1,323 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Value */
+:root {
+    --darkblue: #033b4a;
+    --green: #1ec997;
+    --gray: #4a4a4b;
+    --bg-primary: #ecf0f3;
+    --primary: #f1fef9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2 {
+    font-family: "Saira", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Global Value end*/
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Header-nav start */
+#home {
+    background-color: var(--bg-primary);
+    height: 100vh;
+        background: url(../images/Photo.jpg) no-repeat center center/cover;
+}
+
+#home .nav-bar {
+
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    z-index: 1000;
+}
+
+#home .nav-bar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#home nav .logo {
+    color: var(--darkblue);
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#home nav .logo:hover {
+    color: var(--green);
+    transform: scale(1.1);
+}
+
+#home nav ul {
+    display: flex;
+}
+
+#home nav ul li a {
+    color: var(--darkblue);
+    font-weight: 600;
+
+    transition: 0.3s;
+    margin: 0 15px;
+}
+
+#home nav ul li a:hover {
+    color: var(--green);
+}
+
+#home .header-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    padding: 5rem 2rem 0;
+}
+
+
+#home .header-content .logo:hover {
+    transform: scale(1.05);
+}
+
+#home .header-content .content-txt p:first-of-type {
+    color: var(--green);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#home .header-content .content-txt h1 {
+    color: var(--bg-primary);
+    font-size: 60px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+#home .header-content .content-txt p:last-of-type {
+    color: var(--bg-primary);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+#home .header-content .icons {
+    margin: 2rem 0 3rem;
+
+}
+
+#home .header-content .icons a {
+    background-color: var(--gray);
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#home .header-content .icons a:hover {
+    background-color: var(--green);
+}
+
+#home .header-content .content-txt .btn {
+
+    background-color: var(--green);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#home .header-content .content-txt .btn:hover {
+    opacity: 0.8;
+}
+
+.container {
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+/* about start */
+
+
+#about .container .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#about .container .title h2 {
+    color: var(--darkblue);
+    font-size: 30px;
+}
+
+#about .container .title div {
+    width: 100px;
+    height: 2px;
+    background-color: var(--green);
+    margin: 0.5rem auto 0;
+}
+
+#about .container .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 8rem;
+}
+
+#about .container .row .content-txt h3 {
+    color: var(--darkblue);
+    font-size: 30px;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+#about .container .row .content-txt h3 span {
+    color: var(--green);
+}
+
+#about .container .row .content-txt p {
+    color: var(--gray);
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+#about .container .row .email p span {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+#about .container .row .email p {
+    color: var(--darkblue);
+    padding: 5px 0;
+    font-size: 18px;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+
+}
+
+/* about ned */
+/* skilss start */
+#skills {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+
+#skills .container .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#skills .container .title h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+#skills .container .title h2 span {
+    color: var(--green);
+}
+
+#skills .container .title div {
+    width: 100px;
+    height: 2px;
+    background-color: var(--green);
+    margin: 0.5rem auto 0;
+}
+
+#skills .container .big-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    background-color: #0F272D;
+}
+
+#skills .container .big-box img {
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+#skills .container .big-box .small-box {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: black;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+#skills .container .big-box .small-box:hover {
+    transform: scale(1.05);
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+#skills .container .big-box .small-box p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* skilss end */
+/* education start */
+
+
+#education .container .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#education .container .title h2 {
+    color: var(--darkblue);
+    font-size: 30px;
+}
+
+#education .container .title h2 span {
+    color: var(--green);
+}
+
+#education .container .title div {
+    width: 100px;
+    height: 2px;
+    background-color: var(--green);
+    margin: 0.5rem auto 0;
+}
+
+#education .container .row .fact {
+    color: var(--gray);
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}

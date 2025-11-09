@@ -1,0 +1,120 @@
+@media (max-width:1000px) {
+    #home .nav-bar nav {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    #home nav .logo {
+        font-size: 20px;
+    }
+
+    #home nav ul li a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    #home .header-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10rem 2rem 0;
+        gap: 2rem;
+        
+    }
+#home .header-content .btn
+{
+    display: none;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+    #home .header-content .content-txt
+{
+    z-index: 100;
+}
+
+    #about .container .row {
+        display: flex;
+        flex-direction: column;
+    
+
+    }
+    #about .container .row .content-txt
+    {
+        text-align: center;
+        margin: auto;
+    }
+    #about .container .row .content-txt h3 {
+        font-size: 24px;
+        margin: 0 2rem;
+    }
+
+    #about .container .row .content-txt p {
+        font-size: 12px;
+        margin: 3rem 2rem;
+
+
+    }
+
+    #skills .container .big-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    #skills .container .big-box img {
+        width: 15%;
+    }
+
+    #home {
+        height: 80vh;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    #about .container .row .content-txt p {
+        padding: 0 2rem;
+    }
+
+    #about .container .row .content-txt .email p span {
+        margin: 0 2rem;
+    }
+
+    #skills .container .big-box {
+        grid-template-columns: 1fr;
+    }
+
+    #skills .container .big-box img {
+        width: 25%;
+        margin: auto;
+    }
+
+#home .header-content .content-txt h1 {
+    font-size: 40px;
+}
+#home .header-content .content-txt p:last-of-type {
+    font-size: 16px;
+}
+#about .container .title h2 {
+    font-size: 24px;
+}
+#about .container .row .content-txt h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+#about .container .row .content-txt p {
+    font-size: 14px;
+}
+#home .nav-bar
+{
+        padding: 1.5rem 0rem;
+}
+}
