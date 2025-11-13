@@ -40,7 +40,7 @@ body {
 #home {
     background-color: var(--bg-primary);
     height: 100vh;
-        background: url(../images/Photo.jpg) no-repeat center center/cover;
+    background: url(../images/Photo.jpg) no-repeat center center/cover;
 }
 
 #home .nav-bar {
@@ -52,6 +52,18 @@ body {
     padding: 1.5rem 2rem;
     z-index: 1000;
 }
+
+.nav-bar {
+    top: -100px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.nav-bar.show {
+    top: 0;
+    opacity: 1;
+}
+
 
 #home .nav-bar nav {
     display: flex;
@@ -314,10 +326,280 @@ body {
     margin: 0.5rem auto 0;
 }
 
-#education .container .row .fact {
+#education .container .fact {
     color: var(--gray);
     font-size: 18px;
     margin-bottom: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
 }
+
+#education .container .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+#education .container .card {
+    background-color: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 1rem;
+}
+
+#education .container .card .content-txt {
+    text-align: center;
+}
+
+#education .container .card .content-txt img {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+#education .container .card .content-txt h3 {
+    color: var(--darkblue);
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+#education .container .card .content-txt span {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#education .container .card .content-txt p {
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* education end */
+/* projects start */
+#projects {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+
+#projects .container .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#projects .container .title h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+#projects .container .title h2 span {
+    color: var(--green);
+}
+
+#projects .container .title div {
+    width: 100px;
+    height: 2px;
+    background-color: var(--green);
+    margin: 0.5rem auto 0;
+}
+
+#projects .container .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+#projects .container .row .card {
+    background-color: #0F272D;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+#projects .container .row .card:hover {
+    transform: scale(1.05);
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+#projects .container .row .card .content-txt {
+    text-align: center;
+}
+
+#projects .container .row .card img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#projects .container .row .card .content-txt h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+#projects .container .row .card .content-txt p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--bg-primary);
+}
+
+#projects .container .row .card .content-txt a {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--darkblue);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#projects .container .row .card .content-txt a:hover {
+    background-color: #fff;
+    color: var(--darkblue);
+}
+
+#projects .container .fact {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin: 5rem 0;
+    background-color: var(--green);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* projects end */
+/* contact start */
+#contact {
+    background-color: var(--bg-primary);
+}
+
+#contact .container .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact .container .title h2 {
+    color: var(--darkblue);
+    font-size: 30px;
+}
+
+#contact .container .title h2 span {
+    color: var(--green);
+}
+
+#contact .container .title div {
+    width: 100px;
+    height: 2px;
+    background-color: var(--green);
+    margin: 0.5rem auto 0;
+}
+
+#contact .container .row form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+#contact .container .row form input,
+#contact .container .row form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+
+#contact .container .row form input:focus,
+#contact .container .row form textarea:focus {
+    outline: none;
+    border-color: var(--green);
+}
+
+#contact .container .row form button {
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact .container .row form button:hover {
+    opacity: 0.8;
+}
+
+/* contact end */
+/* footer start */
+footer {
+    background-color: #222222;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footer footer .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#footer footer .row .col h2,
+#footer footer .row .col-social h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    padding: 0 10px;
+    border-left: 2px solid skyblue;
+}
+
+#footer footer .row .col {
+    margin: 0 20px;
+}
+
+#footer footer .row .col p,
+#footer footer .row .col a {
+    font-size: 16px;
+    padding: 8px 0;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #fff;
+    line-height: 1.7;
+}
+
+#footer footer .row .col a:hover {
+    color: var(--green);
+}
+
+#footer footer .row .col-social a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: var(--gray);
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#footer footer .row .col-social a:hover {
+    background-color: var(--green);
+}
+
+#footer .p {
+    text-align: center;
+    font-size: 16px;
+    background-color: #0a0909;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* footer end */
