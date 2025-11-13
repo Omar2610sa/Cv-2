@@ -53,16 +53,7 @@ body {
     z-index: 1000;
 }
 
-.nav-bar {
-    top: -100px;
-    opacity: 0;
-    transition: all 0.5s ease;
-}
 
-.nav-bar.show {
-    top: 0;
-    opacity: 1;
-}
 
 
 #home .nav-bar nav {

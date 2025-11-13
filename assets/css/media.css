@@ -9,6 +9,16 @@
     #home nav .logo {
         font-size: 15px;
     }
+    .nav-bar {
+    top: -100px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.nav-bar.show {
+    top: 0;
+    opacity: 1;
+}
 
     #home nav ul li a {
         margin: 0 7px;
