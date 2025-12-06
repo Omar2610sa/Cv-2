@@ -84,6 +84,9 @@
     #home {
         height: 80vh;
     }
+       .scroll-to-top {
+        padding: 8px;
+    }
 }
 
 @media (max-width:600px) {
