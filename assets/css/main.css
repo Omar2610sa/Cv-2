@@ -594,3 +594,22 @@ footer {
 }
 
 /* footer end */
+/* Scroll to top */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    /* display: none; */
+    z-index: 1000;
+    transition: 0.3s;
+}
+.scroll-to-top:hover {
+    background-color: #383848;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
