@@ -1,29 +1,59 @@
 @media (max-width:1000px) {
 
-    #home .nav-bar nav {
-        flex-direction: column;
-        gap: 1rem;
+   #nav-bar .humburger {
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
 
-    }
-
-    #home nav .logo {
-        font-size: 15px;
-    }
-    .nav-bar {
-    top: -100px;
+#home .humburger i {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
-.nav-bar.show {
-    top: 0;
+/* اللي ظاهر افتراضياً */
+#home .humburger i.active {
     opacity: 1;
+    transform: rotate(180deg);
 }
 
-    #home nav ul li a {
-        margin: 0 7px;
-        font-size: 14px;
-    }
+/* لما تضغط */
+
+
+#nav-bar {
+    padding: 0 3rem;
+}
+
+#nav-bar ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    display: none; /* اساسي لازم */
+}
+
+#nav-bar ul.active {
+    display: block;
+}
+
+#nav-bar ul li {
+    margin: 20px 0;
+    border-bottom: 1px solid #a4a4a4;
+    padding-bottom: 10px;
+}
+
+#nav-bar ul li a {
+    margin: 0;
+}
+
+
 
     #home .header-content {
         display: flex;
@@ -31,35 +61,37 @@
         text-align: center;
         padding: 10rem 2rem 0;
         gap: 2rem;
-        
+
     }
-#home .header-content .btn
-{
-    display: none;
-}
-#home::before {
-    content: "";
-    position: absolute;
-    height: 80vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
-    #home .header-content .content-txt
-{
-    z-index: 100;
-}
+
+    #home .header-content .btn {
+        display: none;
+    }
+
+    #home::before {
+        content: "";
+        position: absolute;
+        height: 80vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    #home .header-content .content-txt {
+        z-index: 100;
+    }
 
     #about .container .row {
         display: flex;
         flex-direction: column;
-    
+
 
     }
-    #about .container .row .content-txt
-    {
+
+    #about .container .row .content-txt {
         text-align: center;
         margin: auto;
     }
+
     #about .container .row .content-txt h3 {
         font-size: 24px;
         margin: 0 2rem;
@@ -90,7 +122,10 @@
     .container {
         padding: 1rem;
     }
-
+    #nav-bar ul li 
+    {
+        text-align: center;
+    }
     #about .container .row .content-txt p {
         padding: 0 2rem;
     }
@@ -107,47 +142,53 @@
         width: 25%;
         margin: auto;
     }
-    #skills .container .big-box .small-box:hover
-    {
+
+    #skills .container .big-box .small-box:hover {
         transform: none;
     }
 
-#home .header-content .content-txt h1 {
-    font-size: 40px;
-}
-#home .header-content .content-txt p:last-of-type {
-    font-size: 16px;
-}
-#about .container .title h2 {
-    font-size: 24px;
-}
-#about .container .row .content-txt h3 {
-    font-size: 20px;
-    line-height: 1.5;
-}
-#about .container .row .content-txt p {
-    font-size: 14px;
-}
-#home .nav-bar
-{
+    #home .header-content .content-txt h1 {
+        font-size: 40px;
+    }
+
+    #home .header-content .content-txt p:last-of-type {
+        font-size: 16px;
+    }
+
+    #about .container .title h2 {
+        font-size: 24px;
+    }
+
+    #about .container .row .content-txt h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    #about .container .row .content-txt p {
+        font-size: 14px;
+    }
+
+    #home .nav-bar {
         padding: 1.5rem 0rem;
-}
-#education .container .row {
-    grid-template-columns: 1fr;
-}
-#projects .container .row {
-    grid-template-columns: 1fr;
-}
-#projects .container .row .card:hover
-{
-    transform: none;
-}
-#footer footer .row
-{
-    grid-template-columns: 1fr;
-}
-#footer footer .row .col-social a
-{
-    margin: 10px;
-}
+    }
+
+    #education .container .row {
+        grid-template-columns: 1fr;
+    }
+
+    #projects .container .row {
+        grid-template-columns: 1fr;
+    }
+
+    #projects .container .row .card:hover {
+        transform: none;
+    }
+
+    #footer footer .row {
+        grid-template-columns: 1fr;
+    }
+
+    #footer footer .row .col-social a {
+        margin: 10px;
+    }
 }

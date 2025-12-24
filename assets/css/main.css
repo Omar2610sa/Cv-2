@@ -43,54 +43,48 @@ body {
     background: url(../images/Photo.jpg) no-repeat center center/cover;
 }
 
-#home .nav-bar {
-
+#nav-bar {
+    position: sticky;
+    top: 0;
     background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    position: fixed;
-    width: 100%;
-    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 80px;
     z-index: 1000;
 }
 
+#nav-bar .logo {
+    font-size: 20px;
+}
 
+#nav-bar .humburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 
-
-#home .nav-bar nav {
+#nav-bar ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 1100px;
-    margin: auto;
 }
 
-#home nav .logo {
-    color: var(--darkblue);
-    font-size: 24px;
-    font-weight: 600;
-    transition: 0.3s;
+
+#nav-bar ul li a {
+    text-transform: capitalize;
+    color: var(--gray);
+    margin: 0 20px;
+    font-weight: 500;
+    transition: 0.3s all ease;
 }
 
-#home nav .logo:hover {
-    color: var(--green);
-    transform: scale(1.1);
-}
-
-#home nav ul {
-    display: flex;
-}
-
-#home nav ul li a {
-    color: var(--darkblue);
-    font-weight: 600;
-
-    transition: 0.3s;
-    margin: 0 15px;
-}
-
-#home nav ul li a:hover {
+#nav-bar ul li a:hover {
     color: var(--green);
 }
+
+/* Header-nav End */
 
 #home .header-content {
     display: grid;
@@ -99,7 +93,7 @@ body {
     margin: auto;
     height: 100%;
     align-items: center;
-    padding: 5rem 2rem 0;
+    padding:  2rem ;
 }
 
 
@@ -594,3 +588,25 @@ footer {
 }
 
 /* footer end */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--green);
+    color: var(--primary);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 1000;
+    transition: 0.3s all ease;
+    opacity: 0;
+}
+.scroll-to-top.show {
+    opacity: 1;
+}
+.scroll-to-top:hover {
+    background-color: #383848;
+    color:var(--bg-primary);
+    cursor: pointer;
+    transform: translateY(-5px);
+}
