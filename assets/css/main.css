@@ -600,13 +600,13 @@ footer {
     z-index: 1000;
     transition: 0.3s all ease;
     opacity: 0;
+    cursor: pointer;
 }
 .scroll-to-top.show {
     opacity: 1;
 }
-.scroll-to-top:hover {
+.scroll-to-top.toggle {
     background-color: #383848;
     color:var(--bg-primary);
-    cursor: pointer;
     transform: translateY(-5px);
 }

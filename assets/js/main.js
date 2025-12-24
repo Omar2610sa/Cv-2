@@ -30,4 +30,5 @@ scrollTop.onclick = function(){
         top:0,
         behavior:"smooth"
     })
+    scrollTop.classList.toggle("toggle")
 }
