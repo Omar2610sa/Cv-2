@@ -17,13 +17,11 @@
     transition: all 0.3s ease;
 }
 
-/* اللي ظاهر افتراضياً */
 #home .humburger i.active {
     opacity: 1;
     transform: rotate(180deg);
 }
 
-/* لما تضغط */
 
 
 #nav-bar {
@@ -36,7 +34,7 @@
     left: 0;
     background-color: #fff;
     width: 100%;
-    display: none; /* اساسي لازم */
+    display: none;
 }
 
 #nav-bar ul.active {
@@ -48,7 +46,9 @@
     border-bottom: 1px solid #a4a4a4;
     padding-bottom: 10px;
 }
-
+#nav-bar ul li:last-child {
+    border-bottom: none;
+}
 #nav-bar ul li a {
     margin: 0;
 }

@@ -619,7 +619,7 @@ footer {
 .scroll-to-top.show {
     opacity: 1;
 }
-.scroll-to-top.toggle {
+.scroll-to-top:hover {
     background-color: #383848;
     color:var(--bg-primary);
     transform: translateY(-5px);

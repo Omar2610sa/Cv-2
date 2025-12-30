@@ -13,6 +13,13 @@ hum.addEventListener("click", () => {
     navbar.classList.toggle("active");
 });
 
+document.querySelectorAll("#navv li a").forEach((link) =>{
+    link.addEventListener("click", ()=>{
+        navbar.classList.remove("active");
+    bars.classList.add("active");
+    xmark.classList.remove("active");
+    })
+})
 // Scroll to top function 
 let scrollTop = document.querySelector(".scroll-to-top")
 // Add clss show for visability
@@ -30,7 +37,6 @@ scrollTop.onclick = function(){
         top:0,
         behavior:"smooth"
     })
-    scrollTop.classList.toggle("toggle")
 }
 
 // Contact Validation
