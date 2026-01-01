@@ -73,13 +73,22 @@ form.addEventListener("submit", (e)=>{
         showSuccess(username)
     }
     // Email Validatiom
+    function validateEmail() {
+    const emailValue = email.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
     if(email.value.trim() === ""){
         showError(email, "Email is requried")
         isValid = false
 
-    } else {
+    } else if (!emailRegex.test(emailValue)){
+        showError(email, "Entre a valid Email")
+        isValid = false
+    } 
+    else {
         showSuccess(email)
     }
+}   validateEmail()
     // Phone Validation
     if(phone.value.trim() === ""){
         showError(phone, "Phone is requried")
