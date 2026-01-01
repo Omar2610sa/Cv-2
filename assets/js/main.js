@@ -113,3 +113,20 @@ form.addEventListener("submit", (e)=>{
         e.preventDefault()
     }
 })
+
+// Dark bottom toggle
+
+function darkToggle(){
+    const body = document.querySelector("body")
+    const darkBtn = document.querySelector(".dark-btn i")
+
+    body.classList.toggle("dark")
+    // Change darl icon
+    if (body.classList.contains("dark")){
+        darkBtn.classList.remove("fa-moon")
+        darkBtn.classList.add("fa-sun")
+    }else{
+        darkBtn.classList.add("fa-moon")
+        darkBtn.classList.remove("fa-sun")
+    }
+}

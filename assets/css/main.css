@@ -503,7 +503,7 @@ body {
     color: red;
     font-size: 14px;
     visibility: hidden;
-    margin-bottom: 1rem;
+    margin: .5rem 0 1rem;
 }
 /* Error*/
 #contact .container .row form .form-control.error span{
@@ -604,7 +604,7 @@ footer {
 /* footer end */
 .scroll-to-top {
     position: fixed;
-    bottom: 30px;
+    bottom: 70px;
     right: 30px;
     background-color: var(--green);
     color: var(--primary);
@@ -623,4 +623,207 @@ footer {
     background-color: #383848;
     color:var(--bg-primary);
     transform: translateY(-5px);
+}
+/* dark mode styles */
+body.dark {
+    --primary: #fff;
+    --darkblue: #000;
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --green: #4CAF50;
+    --gray: #333;
+}
+
+.dark-btn {
+    z-index: 1000;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+/* dark mode styles */
+body.dark {
+    --primary: #1a1a1a;
+    --darkblue: #f0f0f0;
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --green: #1ec997;
+    --gray: #c9d1d9;
+}
+
+body.dark {
+    background-color: var(--bg-primary);
+    color: var(--gray);
+}
+
+/* Nav Bar Dark */
+body.dark #nav-bar {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid #30363d;
+}
+
+body.dark #nav-bar ul li a {
+    color: var(--gray);
+}
+
+body.dark #nav-bar ul li a:hover {
+    color: var(--green);
+}
+
+/* Home Section Dark */
+body.dark #home {
+    background-color: var(--bg-primary);
+}
+
+body.dark #home .header-content .content-txt h1 {
+    color: #fff;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+body.dark #home .header-content .content-txt p:last-of-type {
+    color: #fff;
+}
+body.dark #home .header-content .icons a{
+    background-color: var(--bg-secondary);
+}
+/* About Section Dark */
+body.dark #about {
+    background-color: var(--bg-primary);
+}
+
+body.dark #about .container .title h2 {
+    color: #fff;
+}
+
+body.dark #about .container .row .content-txt h3 {
+    color: #fff;
+}
+
+body.dark #about .container .row .content-txt p {
+    color: var(--gray);
+}
+
+body.dark #about .container .row .email p {
+    color: var(--gray);
+    border-bottom: 1px solid #30363d;
+}
+
+/* Skills Section Dark */
+body.dark #skills {
+    background-color: var(--bg-secondary);
+}
+
+body.dark #skills .container .big-box {
+    background-color: #0d1117;
+}
+
+body.dark #skills .container .big-box .small-box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+}
+
+body.dark #skills .container .big-box .small-box:hover {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+/* Education Section Dark */
+body.dark #education {
+    background-color: var(--bg-primary);
+}
+
+body.dark #education .container .title h2 {
+    color: #fff;
+}
+
+body.dark #education .container .fact {
+    color: var(--gray);
+}
+
+body.dark #education .container .card {
+    background-color: var(--bg-secondary);
+    border: 1px solid #30363d;
+}
+
+body.dark #education .container .card .content-txt h3 {
+    color: #fff;
+}
+
+body.dark #education .container .card .content-txt p {
+    color: var(--gray);
+}
+
+/* Projects Section Dark */
+body.dark #projects {
+    background-color: var(--bg-secondary);
+}
+
+body.dark #projects .container .row .card {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+}
+
+body.dark #projects .container .row .card:hover {
+    background-color: var(--green);
+}
+
+body.dark #projects .container .row .card .content-txt p {
+    color: var(--gray);
+}
+
+body.dark #projects .container .row .card:hover .content-txt p {
+    color: #fff;
+}
+
+body.dark #projects .container .row .card .content-txt a {
+    background-color: var(--bg-secondary);
+}
+
+body.dark #projects .container .row .card .content-txt a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Contact Section Dark */
+body.dark #contact {
+    background-color: var(--bg-primary);
+}
+
+body.dark #contact .container .title h2 {
+    color: #fff;
+}
+
+body.dark #contact .container .row form .form-control input,
+body.dark #contact .container .row form .form-control textarea {
+    background-color: var(--bg-secondary);
+    border: 1px solid #30363d;
+    color: var(--gray);
+}
+
+body.dark #contact .container .row form .form-control input:focus,
+body.dark #contact .container .row form .form-control textarea:focus {
+    border-color: var(--green);
+    background-color: #161b22;
+}
+
+body.dark #contact .container .row form button {
+    background-color: var(--green);
+}
+
+/* Footer Dark */
+body.dark footer {
+    background-color: #0d1117;
+    border-top: 1px solid #30363d;
+}
+
+body.dark #footer .p {
+    background-color: #010409;
+}
+
+/* Scroll to Top Dark */
+body.dark .scroll-to-top{
+    color: #fff;
+}
+body.dark .scroll-to-top:hover {
+    background-color: #30363d;
+    color: #fff;
 }
