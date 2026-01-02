@@ -511,7 +511,9 @@ body {
 }
 
 #contact .container .row form .form-control.error input,
-#contact .container .row form .form-control.error textarea{
+#contact .container .row form .form-control.error textarea,
+body.dark #contact .container .row form .form-control.error input,
+body.dark #contact .container .row form .form-control.error textarea{
     border-color: red;
 }
 #contact .container .row form input:focus,

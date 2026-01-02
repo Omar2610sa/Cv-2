@@ -121,12 +121,30 @@ function darkToggle(){
     const darkBtn = document.querySelector(".dark-btn i")
 
     body.classList.toggle("dark")
-    // Change darl icon
+    // Change dark icon
     if (body.classList.contains("dark")){
         darkBtn.classList.remove("fa-moon")
         darkBtn.classList.add("fa-sun")
+        // Save changes of color
+        localStorage.setItem('darkMode', 'enable')
     }else{
+        // Change icon of dark mode
         darkBtn.classList.add("fa-moon")
         darkBtn.classList.remove("fa-sun")
+        // Save changes of color
+        localStorage.setItem('darkMode', 'disable')
     }
 }
+
+// Local storage of dark mode
+window.addEventListener("DOMContentLoaded",()=>{
+    const darkMode = localStorage.getItem('darkMode')
+    const body = document.body
+    const darkBtn = document.querySelector(".dark-btn i")
+
+    if(darkMode === "enable"){
+        body.classList.add("dark")
+        darkBtn.classList.remove("fa-moon")
+        darkBtn.classList.add("fa-sun")
+    }
+})
