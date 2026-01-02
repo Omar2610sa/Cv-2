@@ -604,7 +604,7 @@ footer {
 /* footer end */
 .scroll-to-top {
     position: fixed;
-    bottom: 70px;
+    bottom: 30px;
     right: 30px;
     background-color: var(--green);
     color: var(--primary);
