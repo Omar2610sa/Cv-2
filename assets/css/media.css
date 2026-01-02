@@ -19,7 +19,7 @@
 
 #home .humburger i.active {
     opacity: 1;
-    transform: rotate(180deg);
+    transform: rotate(1turn);
 }
 
 
@@ -30,7 +30,7 @@
 
 #nav-bar ul {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
     background-color: #fff;
     width: 100%;
@@ -44,8 +44,8 @@
 
 #nav-bar ul li {
     margin: 20px 0;
-    border-bottom: 1px solid #a4a4a4;
-    padding: 15px 0;
+    
+    padding: 6px 0px 12px;
 }
 #nav-bar ul li:last-child {
     border-bottom: none;
@@ -144,7 +144,7 @@ body.dark #nav-bar ul{
     }
 
     #skills .container .big-box {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
 
     #skills .container .big-box img {
