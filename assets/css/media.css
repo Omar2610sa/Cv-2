@@ -125,6 +125,9 @@ body.dark #nav-bar ul{
     #projects .container .row{
         grid-template-columns: repeat(2, 1fr);
     }
+    #testmonials .slider{
+        max-width: 500px;
+    }
 }
 
 @media (max-width:600px) {
@@ -192,9 +195,38 @@ body.dark #nav-bar ul{
     #projects .container .row .card:hover {
         transform: none;
     }
-
+    #testmonials .slider{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    #testmonials .slider .slides .slide img {
+        width: 100px;
+        height: 100px;
+    }
+    #testmonials .slider .slides .slide .content p
+    {
+        font-size: 14px;
+    }
+    #testmonials .slider .prev,
+    #testmonials .slider .next {
+        position: static;
+        margin: 1rem 15px 0;
+    }
+    #testmonials .slider .prev {
+        left: auto;
+    }
+    #testmonials .slider .next {
+        right: auto;
+    }
     #footer footer .row {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #footer footer .row .col h2, #footer footer .row .col-social h2{
+        padding: 5px 0;
+        display: inline-block;
+        border-left:none; 
+        border-bottom: 2px solid var(--green);
     }
 
     #footer footer .row .col-social a {

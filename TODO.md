@@ -1,0 +1,3 @@
+- [x] Fix typos in comments and error messages (e.g., "requried" to "required", "Sucsses" to "Success")
+- [x] Fix bug in testimonial slider: change "curruntIndex" to "currentIndex" and "showSlide" to "showSlides"
+- [x] Make testimonial slider responsive at max-width 600px: full width, smaller images, repositioned buttons
