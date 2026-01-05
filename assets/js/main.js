@@ -193,4 +193,9 @@ dots.forEach((dot, index)=>{
 prevBtn.addEventListener("click", prevSlide)
 nextBtn.addEventListener("click", nextSlide)
 
+// Update Year Right auto in footer section
 
+const yearRight = document.querySelector(".p span")
+
+let year = new Date()
+yearRight.innerText = year.getFullYear()
