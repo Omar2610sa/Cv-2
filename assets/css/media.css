@@ -195,6 +195,12 @@ body.dark #nav-bar ul{
     #projects .container .row .card:hover {
         transform: none;
     }
+
+    #contact .container .row form button{
+        width: 50%;
+        margin: auto;
+    }
+
     #testmonials .slider{
         max-width: 100%;
         padding: 0 1rem;

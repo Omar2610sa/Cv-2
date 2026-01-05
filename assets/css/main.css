@@ -461,7 +461,7 @@ body {
 /* projects end */
 /* contact start */
 #contact {
-    background-color: var(--bg-primary);
+    background-color: var(--darkblue);
 }
 
 #contact .container .title {
@@ -470,7 +470,7 @@ body {
 }
 
 #contact .container .title h2 {
-    color: var(--darkblue);
+    color: #fff;
     font-size: 30px;
 }
 
@@ -544,7 +544,6 @@ body.dark #contact .container .row form .form-control.error textarea {
 /* contact end */
 /* Testmonials Start */
 #testmonials {
-    background-color: var(--darkblue);
     color: #fff;
 }
 
@@ -554,7 +553,7 @@ body.dark #contact .container .row form .form-control.error textarea {
 }
 
 #testmonials .container .title h2 {
-    color: #fff;
+    color: var(--darkblue);
     font-size: 30px;
 }
 
@@ -655,9 +654,10 @@ body.dark #contact .container .row form .form-control.error textarea {
 #testmonials .slider .dots .dot {
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: var(--gray);
     display: inline-block;
     cursor: pointer;
+    
     border-radius: 50%;
     margin: 5px;
     transition: all 0.3s ease 0s;
@@ -920,7 +920,7 @@ body.dark #projects .container .row .card .content-txt a:hover {
 
 /* Contact Section Dark */
 body.dark #contact {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
 }
 
 body.dark #contact .container .title h2 {
@@ -929,7 +929,7 @@ body.dark #contact .container .title h2 {
 
 body.dark #contact .container .row form .form-control input,
 body.dark #contact .container .row form .form-control textarea {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     border: 1px solid #30363d;
     color: var(--gray);
 }
@@ -945,7 +945,7 @@ body.dark #contact .container .row form button {
 }
 /* Testmonial Dark */
 body.dark #testmonials {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
 }
 
 /* Footer Dark */
