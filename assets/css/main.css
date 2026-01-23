@@ -408,7 +408,7 @@ body {
 }
 
 #projects .container .row .card:hover {
-    transform: scale(1.05);
+    transform: scale(0.99);
     background-color: var(--green);
     cursor: pointer;
 }
@@ -420,6 +420,8 @@ body {
 #projects .container .row .card img {
     width: 100%;
     margin-bottom: 2rem;
+    height: 200px;
+    object-fit: cover;
 }
 
 #projects .container .row .card .content-txt h3 {
