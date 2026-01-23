@@ -137,7 +137,7 @@ body {
     transition: 0.3s;
 }
 
-#home .header-content .icons a:hover {
+#home .header-content .icons a:where(:hover, :focus-visible) {
     background-color: var(--green);
 }
 
@@ -150,8 +150,9 @@ body {
     transition: 0.3s;
 }
 
-#home .header-content .content-txt .btn:hover {
-    opacity: 0.8;
+#home .header-content .content-txt .btn:where(:hover, :focus-visible){
+    background-color: var(--bg-primary);
+    color: var(--darkblue);
 }
 
 .container {
@@ -274,7 +275,7 @@ body {
     transition: 0.3s;
 }
 
-#skills .container .big-box .small-box:hover {
+#skills .container .big-box .small-box:where(:hover, :focus-visible) {
     transform: scale(1.05);
     background-color: var(--green);
     cursor: pointer;
@@ -407,7 +408,7 @@ body {
     transition: 0.3s;
 }
 
-#projects .container .row .card:hover {
+#projects .container .row .card:where(:hover, :focus-visible) {
     transform: scale(0.99);
     background-color: var(--green);
     cursor: pointer;
@@ -445,7 +446,7 @@ body {
     transition: 0.3s;
 }
 
-#projects .container .row .card .content-txt a:hover {
+#projects .container .row .card .content-txt a:where(:hover, :focus-visible) {
     background-color: #fff;
     color: var(--darkblue);
 }
@@ -539,7 +540,7 @@ body.dark #contact .container .row form .form-control.error textarea {
     margin-top: 1rem;
 }
 
-#contact .container .row form button:hover {
+#contact .container .row form button:where(:hover, :focus-visible) {
     opacity: 0.8;
 }
 
@@ -643,8 +644,8 @@ body.dark #contact .container .row form .form-control.error textarea {
     right: -30px;
 }
 
-#testmonials .slider .next:hover,
-#testmonials .slider .prev:hover {
+#testmonials .slider .next:where(:hover, :focus-visible),
+#testmonials .slider .prev:where(:hover, :focus-visible) {
     background-color: var(--gray);
 }
 
@@ -721,7 +722,7 @@ footer {
     transition: 0.3s;
 }
 
-#footer footer .row .col-social a:hover {
+#footer footer .row .col-social a:where(:hover, :focus-visible){
     background-color: var(--green);
 }
 
@@ -800,7 +801,7 @@ body.dark #nav-bar ul li a {
     color: var(--gray);
 }
 
-body.dark #nav-bar ul li a:hover {
+body.dark #nav-bar ul li a:where(:hover, :focus-visible) {
     color: var(--green);
 }
 
@@ -915,7 +916,7 @@ body.dark #projects .container .row .card .content-txt a {
     background-color: var(--bg-secondary);
 }
 
-body.dark #projects .container .row .card .content-txt a:hover {
+body.dark #projects .container .row .card .content-txt a:where(:hover, :focus-visible) {
     background-color: #fff;
     color: #000;
 }
@@ -965,7 +966,7 @@ body.dark .scroll-to-top {
     color: #fff;
 }
 
-body.dark .scroll-to-top:hover {
+body.dark .scroll-to-top:where(:hover, :focus-visible){
     background-color: #30363d;
     color: #fff;
 }

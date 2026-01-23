@@ -155,7 +155,7 @@ body.dark #nav-bar ul{
         margin: auto;
     }
 
-    #skills .container .big-box .small-box:hover {
+    #skills .container .big-box .small-box:where(:hover, :focus-visible) {
         transform: none;
     }
 
@@ -192,7 +192,7 @@ body.dark #nav-bar ul{
         grid-template-columns: 1fr;
     }
 
-    #projects .container .row .card:hover {
+    #projects .container .row .card:where(:hover, :focus-visible) {
         transform: none;
     }
 
